@@ -21,6 +21,17 @@ a {
   }
   body {
     color: white;
-    background: black;
+    background: rgb(37, 37, 37);
   }
+}
+
+.fc {
+  transform: scale(0.9);
+}
+
+.fc-daygrid-body, .fc-timegrid-body, table {
+  min-width: 100%;
+}
+.fc-col-header, thead, th  {
+  min-width: 100%;
 }
