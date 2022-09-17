@@ -7,9 +7,11 @@ const withTM = require("next-transpile-modules")([
   "@fullcalendar/interaction",
   "@fullcalendar/react",
   "@fullcalendar/timegrid",
+  "@fullcalendar/resource-timeline",
+  '@fullcalendar/timeline',
 ]);
 
 module.exports = withTM({
-    // reactStrictMode: true,
+    reactStrictMode: true,
     swcMinify: true,
 });
