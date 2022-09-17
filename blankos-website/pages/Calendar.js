@@ -21,7 +21,7 @@ const Calendar = () => {
         { title: 'BLANKOS JUNCTION PARTY', date: new Date() },
         { title: 'event 2', date: '2022-04-02' }
       ]}
-      resources={[]}
+      headerToolbar={{start: 'title', center: 'prev today next', end: 'prevYear nextYear'}}
     /> )}
     </>
   );
