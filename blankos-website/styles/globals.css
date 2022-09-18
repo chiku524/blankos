@@ -33,13 +33,10 @@ a {
   }
 }
 
-.fc {
-  transform: scale(0.9);
-  position: absolute;
-  right: 50px;
-  top: 50px;
-  min-width: 50%;
-  height: auto;
+.container {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
 }
 
 .fc-daygrid-body, .fc-timegrid-body, table {
@@ -63,4 +60,89 @@ a {
   color: rgb(33, 223, 16) !important;
   font-weight: bold;
   text-align: center;
+}
+
+.left-copy-container {
+  width: 40%;
+  margin: 7% 3% 0px;
+  text-align: center;
+  border: 2px solid rgb(16, 147, 223);
+  border-radius: 25px;
+  height: 60%;
+  animation: border-animation 20s ease-in-out 0s infinite;
+  overflow: hidden;
+}
+
+.left-copy {
+  overflow: scroll;
+  scroll-behavior: smooth;
+  width: 102%;
+  height: 103%;
+  padding: 0 5%;
+}
+
+.left-copy h2 {
+  margin-top: 30px;
+}
+
+@media only screen and (min-width: 1001px) {
+  .calendar-container {
+    position: absolute;
+    right: 25px;
+    top: 7%;
+    min-width: 50%;
+  }
+  .fc {
+    min-width: 50%;
+    height: auto;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .left-copy-container {
+    width: 95% !important;
+    max-height: 60% !important;
+    min-height: 20% !important;
+  }
+  .left-copy {
+    padding: 0 3% 0 2%;
+  }
+  .left-copy h2 {
+    margin-top: 25px !important;
+  }
+
+  .calendar-container {
+    transform: scale(0.8);
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .calendar-container {
+    transform: scale(0.9);
+  }
+  .calendar-container .fc-toolbar-chunk button {
+    margin-left: 0px !important;
+    margin-right: 0px !important;
+    padding: 0 5px !important;
+    height: 100%;
+    border-radius: 0.1em;
+  }
+  .fc .fc-toolbar-title {
+    font-size: 1.3em !important;
+  }
+  .fc .fc-button .fc-icon {
+    font-size: 1em !important;
+  }
+}
+
+@keyframes border-animation {
+  25% {border: 2px solid rgb(16, 199, 223);}
+  50% {border: 2px solid rgb(33, 223, 16);}
+  75% {border: 2px solid rgb(91, 24, 214);}
+  100% {border: 2px solid rgb(16, 147, 223);}
 }
