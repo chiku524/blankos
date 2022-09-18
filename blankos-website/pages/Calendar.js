@@ -18,10 +18,14 @@ const Calendar = () => {
       editable
       selectable
       events={[
-        { title: 'BLANKOS JUNCTION PARTY', date: new Date() },
-        { title: 'event 2', date: '2022-04-02' }
+        { title: 'BLANKOS PARTY', date: `${new Date().toISOString().slice(0,10)}` },
+        { title: 'BLANKOS PARTY', date: `${new Date().toISOString().slice(0,10)}` },
+        { title: 'BLANKOS PARTY', date: `${new Date().toISOString().slice(0,10)}` },
+        { title: 'BLANKOS PARTY', date: `${new Date().toISOString().slice(0,10)}` }
       ]}
-      headerToolbar={{start: 'title', center: 'prev today next', end: 'prevYear nextYear'}}
+      headerToolbar={{start: 'prev today next', center: 'title', end: 'prevYear nextYear'}}
+      validRange={{start: '2020-01-01', end:'2028-01-01'}}
+      dayMaxEvents
     /> )}
     </>
   );
