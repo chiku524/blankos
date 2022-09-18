@@ -21,7 +21,8 @@ const Calendar = () => {
         { title: 'BLANKOS PARTY', date: `${new Date().toISOString().slice(0,10)}` },
         { title: 'BLANKOS PARTY', date: `${new Date().toISOString().slice(0,10)}` },
         { title: 'BLANKOS PARTY', date: `${new Date().toISOString().slice(0,10)}` },
-        { title: 'BLANKOS PARTY', date: `${new Date().toISOString().slice(0,10)}` }
+        { title: 'BLANKOS PARTY', date: `${new Date().toISOString().slice(0,10)}` },
+        { title: 'BLANKOS PARTY', date: '2022-09-20' }
       ]}
       headerToolbar={{start: 'prev today next', center: 'title', end: 'prevYear nextYear'}}
       validRange={{start: '2020-01-01', end:'2028-01-01'}}
