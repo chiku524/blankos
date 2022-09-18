@@ -74,11 +74,11 @@ a {
 }
 
 .left-copy {
-  overflow: scroll;
+  overflow-y: scroll;
   scroll-behavior: smooth;
-  width: 102%;
+  width: 104%;
   height: 103%;
-  padding: 0 5%;
+  padding: 0 7% 0 5%;
 }
 
 .left-copy h2 {
@@ -91,6 +91,7 @@ a {
     right: 25px;
     top: 7%;
     min-width: 50%;
+    margin-top: 25px;
   }
   .fc {
     min-width: 50%;
@@ -109,17 +110,18 @@ a {
     width: 95% !important;
     max-height: 60% !important;
     min-height: 20% !important;
-    margin-top: 1%;
+    margin-top: -5%;
   }
   .left-copy {
-    padding: 0 3% 0 2%;
+    padding: 0 6% 0 2%;
   }
   .left-copy h2 {
     margin-top: 25px !important;
   }
 
   .calendar-container {
-    transform: scale(0.8);
+    transform: scale(0.7);
+    margin-top: -70px;
   }
 }
 
