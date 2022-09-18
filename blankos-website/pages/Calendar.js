@@ -12,7 +12,7 @@ const Calendar = () => {
   }, []);
 
   return (
-    <>
+    <div className="pageContainer">
         <Nav />
         <div className="container">
             <div className="left-copy-container">
@@ -52,7 +52,7 @@ const Calendar = () => {
             /> )}
             </div>
         </div>
-    </>
+    </div>
     
   );
 };

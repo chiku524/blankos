@@ -1,3 +1,12 @@
+.navContainer {
+    width: 100%;
+    margin: 0 auto;
+    position: sticky;
+    top: 0;
+    background:rgb(37, 37, 37);
+    z-index: 10;
+}
+
 .nav {
     height: 50px;
     display: flex;
@@ -14,8 +23,7 @@
 .otherPages {
     display: flex;
     flex-direction: row;
-    /* justify-content: space-between; */
-    /* width: 25%; */
+    margin-right: 40px;
 }
 
 .nav a {
