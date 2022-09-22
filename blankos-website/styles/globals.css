@@ -64,13 +64,15 @@ a {
 
 .left-copy-container {
   width: 40%;
-  margin: 5% 3% 0px;
+  margin: 5% 3% 5%;
   text-align: center;
   border: 2px solid rgb(16, 147, 223);
+  box-shadow: 0px 0px 20px 10px rgb(16, 147, 223);
   border-radius: 25px;
   height: 45em;
   animation: border-animation 20s ease-in-out 0s infinite;
   overflow: hidden;
+  background: rgb(31, 22, 22);
 }
 
 .left-copy {
@@ -119,7 +121,7 @@ a {
 
   .calendar-container {
     transform: scale(0.7);
-    margin-top: -70px;
+    margin-top: -25px;
   }
 }
 
@@ -144,8 +146,8 @@ a {
 }
 
 @keyframes border-animation {
-  25% {border: 2px solid rgb(16, 199, 223);}
-  50% {border: 2px solid rgb(33, 223, 16);}
-  75% {border: 2px solid rgb(91, 24, 214);}
-  100% {border: 2px solid rgb(16, 147, 223);}
+  25% {border: 2px solid rgb(229, 234, 235); box-shadow: 0px 0px 20px 10px rgb(229, 234, 235);}
+  50% {border: 2px solid rgb(33, 223, 16); box-shadow: 0px 0px 20px 10px rgb(33, 223, 16);}
+  75% {border: 2px solid rgb(91, 24, 214); box-shadow: 0px 0px 20px 10px rgb(91, 24, 214);}
+  100% {border: 2px solid rgb(16, 147, 223); box-shadow: 0px 0px 20px 10px rgb(16, 147, 223);}
 }
